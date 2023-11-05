@@ -11,7 +11,7 @@ export class SearchBarManager {
 
   addTagsToSearch(tagList: TagList) {
     tagList.tags.forEach((tag) => {
-      this.searchBarElement.value = `${tag.parsedTag} ${this.searchBarElement.value}}`;
+      this.searchBarElement.value = `${tag.parsedTag} ${this.searchBarElement.value}`;
     });
   }
 
