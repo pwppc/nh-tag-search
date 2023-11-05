@@ -58,9 +58,17 @@ function createSearchModifierButton(
 (function () {
   "use strict";
 
+  const buttonParams = [
+    { buttonText: "Sole", tags: ["sole male"] },
+    { buttonText: "ICST", tags: ["incest"] },
+    { buttonText: "Futa", tags: ["futanari"] },
+    { buttonText: "TRP", tags: ["tomgirl", "yaoi"] },
+    { buttonText: "SHT", tags: ["shota"] },
+  ];
+
   createSearchButton();
-  createSearchModifierButton("Sole", ["sole male"]);
-  createSearchModifierButton("ICST", ["incest"]);
-  createSearchModifierButton("Futa", ["futanari"]);
-  createSearchModifierButton("TRP", ["tomgirl", "yaoi"]);
+
+  buttonParams.forEach(({ buttonText, tags }) => {
+    createSearchModifierButton(buttonText, tags);
+  });
 })();
